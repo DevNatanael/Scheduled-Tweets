@@ -1,0 +1,7 @@
+Ola <%= params[:user].email%>,
+
+Recebemos sua solicitacao para alterar sua senha.
+
+Se foi voce, clique no link para redefinir sua senha. O link ira expirar automaticamente em 15 minutos
+
+<%= link_to "Redefinir senha", password_reset_edit_url(token: @token)%>
